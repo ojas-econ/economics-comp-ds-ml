@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowchart Template</title>
+  <style>
+    h2, h3 {
+      margin: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: normal;
+    }
+
+    body {
+      font-family: "Times New Roman";
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .oval {
+      background: #a8dadc;
+      padding: 1rem 2rem;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .desc {
+      background: #f1faee;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      text-align: left;
+    }
+
+    .desc ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      padding: 0;
+    }
+
+    .stem-label {
+      background: #ffd6a5;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="title">
+      <h2>
+        Introduction to Programming
+      </h2>
+      <h3>
+        Algorithms, Data Science, Machine Learning
+      </h3>
+      <h3>
+        (Using Python)
+      </h3>
+    </div>
+
+    <div class="flowchart">
+      <div class="column">
+        <div class="oval">Getting Started</div>
+        <div class="desc">
+          <ul>
+            <li>Variables, types, expressions</li>
+            <li>Print statements, basic errors</li>
+            <li>Mini-task: temperature converter</li>
+          </ul>
+        </div>
+
+        <div class="oval">Data Structures</div>
+        <div class="arrow">↓</div>
+        <div class="desc">
+          <b>Lists & Arrays</b>
+          <ul>
+            <li>Operations: sum, len, min/max, slicing</li>
+            <li>Package: random</li>
+          </ul>
+          <b>Dictionaries</b>
+          <ul>
+            <li>Key-value structure, nested dicts</li>
+            <li>Manipulation and iteration</li>
+          </ul>
+          <b>Pandas</b>
+          <ul>
+            <li>DataFrames and series</li>
+            <li>Read/write CSVs</li>
+            <li>Mini-task: load & describe dataset</li>
+          </ul>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="oval">Control Structures</div>
+        <div class="desc">
+          <b>Loops</b>
+          <ul>
+            <li>For and while loops</li>
+            <li>Examples: prime test, bubble sort</li>
+          </ul>
+          <b>Conditionals</b>
+          <ul>
+            <li>if, elif, else</li>
+            <li>Examples: leap year, grading</li>
+          </ul>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="oval">Functions</div>
+        <div class="desc">
+          <ul>
+            <li>Defining and reusing logic</li>
+            <li>Use prior logic in function form</li>
+            <li>Mini-task: Gini coefficient function</li>
+          </ul>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="oval">Data & Visualization</div>
+        <div class="desc">
+          <ul>
+            <li>Packages: matplotlib, seaborn, statistics</li>
+            <li>Plots: histograms, scatter, KDE, cdf</li>
+            <li>Mini-project: visualizing income distribution</li>
+          </ul>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="oval">Bringing Together</div>
+        <div class="desc">
+          <ul>
+            <li>Collatz, Monte Carlo simulations</li>
+            <li>Root finding, numerical derivatives</li>
+            <li>Predator-prey model</li>
+            <li>Polynomial fitting, graph networks</li>
+          </ul>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="oval">Statistical Tests</div>
+        <div class="desc">
+          <ul>
+            <li>Formulating hypotheses</li>
+            <li>Z-test, t-test via scipy.stats</li>
+            <li>Application to real data</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="row">
+        <div class="column">
+          <div class="stem-label">Basic Modules</div>
+          <div class="column">
+            <div class="oval">Linear Algebra</div>
+            <div class="desc">
+              <ul>
+                <li>Vectors, matrices, dot/cross</li>
+                <li>Transpose, inverse, determinant</li>
+                <li>Solving Ax = b</li>
+                <li>PCA & SVD (applications)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="arrow">|</div>
+          <div class="oval">OLS</div>
+          <div class="desc">
+            <ul>
+              <li>Regression analysis</li>
+              <li>Hypothesis testing</li>
+              <li>Interpreting coefficients</li>
+            </ul>
+          </div>
+          <div class="arrow">|</div>
+          <div class="oval">Numerical Methods</div>
+          <div class="desc">
+            <ul>
+              <li>Curve fitting (scipy.optimize)</li>
+              <li>Linear programming (scipy.optimize and PuLP)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="stem-label">Micro Theory</div>
+          <div class="column">
+            <div class="oval">Choice Theory</div>
+            <div class="desc">
+              <ul>
+                <li>Modeling axioms (using Dictionaries)</li>
+                <li>Examples: WARP, Acyclicity etc</li>
+              </ul>
+            </div>
+          </div>
+          <div class="arrow">|</div>
+          <div class="oval">Game Theory</div>
+          <div class="desc">
+            <ul>
+              <li>Nash equilibria: pure, mixed</li>
+              <li>Bertrand/Cournot simulations</li>
+              <li>Nested loops for strategies</li>
+            </ul>
+          </div>
+        
+        <div class="arrow">|</div>
+          <div class="oval">Advanced Topics: Economic Desgin</div>
+          <div class="desc">
+            <ul>
+              <li>Matching and Allocation - Gale Shapley etc. </li>
+              <li>Tournaments</li>
+              <li>Nested loops for strategies</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="stem-label">Macro Theory</div>
+          <div class="column">
+            <div class="oval">Growth Models</div>
+            <div class="desc">
+              <ul>
+                <li>Solow model, differential equations</li>
+                <li>Phase diagrams</li>
+              </ul>
+            </div>
+          </div>
+          <div class="arrow">|</div>
+          <div class="oval">Trade Models</div>
+          <div class="desc">
+            <ul>
+              <li>Markov chains, stochastic matrices</li>
+              <li>Transition dynamics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="stem-label">Data Science & ML </div>
+          <div class="column">
+            <div class="oval">Data Handling</div>
+            <div class="desc">
+              <ul>
+                <li>Loading, reshaping, cleaning</li>
+                <li>Merging datasets</li>
+                <li>Descriptive summaries</li>
+              </ul>
+            </div>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="oval">Visualization & Distributions</div>
+          <div class="desc">
+            <ul>
+              <li>Histograms, KDE, scatter</li>
+              <li>Fit lognormal, Pareto</li>
+              <li>Use seaborn, matplotlib</li>
+            </ul>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="oval">Regression Models</div>
+          <div class="desc">
+            <ul>
+              <li>OLS, Ridge, Lasso</li>
+              <li>Multicollinearity, VIF</li>
+              <li>Model selection</li>
+            </ul>
+          </div>
+         <div class="arrow">↓</div>
+          <div class="oval">Time Series</div>
+          <div class="desc">
+            <ul>
+              <li>ARIMA, SARIMAX</li>
+              <li>ADF test, differencing</li>
+              <li>Forecasting with intervals</li>
+            </ul>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="oval">Clustering & PCA</div>
+          <div class="desc">
+            <ul>
+              <li>K-means, silhouette score</li>
+              <li>PCA plots, dimensionality reduction</li>
+            </ul>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="oval">Supervised Learning</div>
+          <div class="desc">
+            <ul>
+              <li>Logistic regression, SVM, Random Forest</li>
+              <li>Train/test split, cross-validation</li>
+              <li>Metrics: accuracy, precision, recall</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
